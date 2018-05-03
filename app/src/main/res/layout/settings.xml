@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
+
+
+        <ImageView
+            android:id="@+id/loginback"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_bg"
+            />
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/scrollView"
+
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/trans_white_rectangle"
+            android:orientation="vertical"
+
+
+
+
+            >
+
+            <TextView
+                android:id="@+id/txtUsername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="20dp"
+                android:text="Bloomer User Name"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="50px"
+                android:textStyle="bold"
+                android:textAlignment="center"/>
+            <TextView
+                android:id="@+id/txtUserEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Hassan.Cute@Student.Charsi.com"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="50px"
+                android:textStyle="bold"
+                android:textAlignment="center"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Levels"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="50px"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"/>
+
+            <RadioGroup
+             android:id="@+id/radioGroup"
+             android:layout_width="wrap_content"
+             android:layout_height="match_parent"
+             >
+
+            <RadioButton
+                android:id="@+id/btnRadio1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Beginner"
+                android:layout_marginLeft="16dp"
+                android:theme="@style/RadioButtonTheme"
+                />
+
+             <RadioButton
+                 android:id="@+id/btnRadio2"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:text="Medium"
+                 android:layout_marginLeft="16dp"
+                 android:theme="@style/RadioButtonTheme"
+                 />
+
+             <RadioButton
+                 android:id="@+id/btnRadio3"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:text="Advanced"
+                 android:layout_marginLeft="16dp"
+                 android:theme="@style/RadioButtonTheme"
+                 />
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select Exercise"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="50px"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"/>
+
+
+
+            <RadioGroup
+                android:id="@+id/radioGroupExercise"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                >
+
+                <RadioButton
+                    android:id="@+id/btnRadioEx1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Walk"
+                    android:layout_marginLeft="16dp"
+                    android:theme="@style/RadioButtonTheme"
+                    />
+
+                <RadioButton
+                    android:id="@+id/btnRadioEx2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Bycycle"
+                    android:layout_marginLeft="16dp"
+                    android:theme="@style/RadioButtonTheme"
+                    />
+
+
+
+            </RadioGroup>
+
+
+            <TextView
+                android:id="@+id/height"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hieght: "
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="50px"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                />
+
+            <AutoCompleteTextView
+                android:id="@+id/userHeight"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/square_text_field"
+                android:drawablePadding="5dp"
+                android:hint="Height"
+                android:paddingLeft="5dp"
+                android:paddingStart="5dp"
+                android:textSize="14sp"
+                android:layout_marginTop="10dp"
+
+                />
+
+
+            <TextView
+                android:id="@+id/weight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Weight: "
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="50px"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"/>
+
+            <AutoCompleteTextView
+                android:id="@+id/userWeight"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/square_text_field"
+                android:drawablePadding="5dp"
+                android:hint="Weight"
+                android:paddingLeft="2dp"
+                android:paddingStart="2dp"
+                android:textSize="14sp"
+                android:layout_marginTop="10dp"
+
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Goal: "
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="50px"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"/>
+
+            <AutoCompleteTextView
+                android:id="@+id/userGoal"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/square_text_field"
+                android:drawablePadding="5dp"
+                android:hint="Goal in Steps"
+                android:paddingLeft="2dp"
+                android:paddingStart="2dp"
+                android:textSize="14sp"
+                android:layout_marginTop="10dp"
+
+                />
+
+
+
+            <Button
+                android:id="@+id/btnSaveSettings"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/save_settings_button"
+                android:text="Save Settings"
+                android:textColor="@color/white"
+                android:textStyle="normal"
+
+
+                />
+            <Button
+                android:id="@+id/btnProfile"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/save_settings_button"
+                android:text="Dashboard"
+                android:textColor="@color/white"
+                android:textStyle="normal"
+
+
+
+                />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+
+</RelativeLayout>
