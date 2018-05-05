@@ -242,7 +242,7 @@
 
             <Button
                 android:id="@+id/btnSaveSettings"
-                android:layout_width="200dp"
+                android:layout_width="130dp"
                 android:layout_height="40dp"
                 android:layout_gravity="center"
                 android:layout_marginBottom="10dp"
@@ -256,7 +256,7 @@
                 />
             <Button
                 android:id="@+id/btnProfile"
-                android:layout_width="200dp"
+                android:layout_width="130dp"
                 android:layout_height="40dp"
                 android:layout_gravity="center"
                 android:layout_marginBottom="40dp"

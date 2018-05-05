@@ -208,19 +208,15 @@
     </ScrollView>
 
 
-
     <android.support.design.widget.NavigationView
-        app:headerLayout="@layout/header"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/menuWhite"
-        app:itemTextColor="@color/menuDarkGray"
-        app:itemIconTint="@color/menuDarkGray"
-        app:menu="@menu/menu"
         android:layout_gravity="start"
-
-
-
+        android:background="@color/menuWhite"
+        app:headerLayout="@layout/header"
+        app:itemIconTint="@color/menuDarkGray"
+        app:itemTextColor="@color/menuDarkGray"
+        app:menu="@menu/menu"
 
 
         >
