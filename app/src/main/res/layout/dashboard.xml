@@ -31,6 +31,7 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:src="@drawable/ic_footsteps"
+            android:layout_marginLeft="20dp"
 
             />
 
@@ -39,16 +40,31 @@
             android:layout_height="50dp"
             android:paddingLeft="5dp"
             android:text="Steps:1700 "
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"/>
 
         <TextView
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:paddingLeft="5dp"
             android:text="Goal: 10000"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"/>
+
+        <Button
+            android:id="@+id/btnMainDashboard"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_dashboard_circle"
+            android:text="500 steps"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            android:textSize="23sp"
+            />
 
 
+<!--
 
         <ImageView
             android:layout_width="200dp"
@@ -58,57 +74,128 @@
 
             />
 
+-->
 
-        <ImageView
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:src="@drawable/ic_bike"
 
-            />
 
-        <ImageView
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:src="@drawable/ic_run"
 
-            />
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:orientation="horizontal"
+            android:id="@+id/linear_Layout_2"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+
+            >
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_bike"
+
+
+                />
+
+            <TextView
+                android:id="@+id/txtBikeValue"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+
+                android:text="10000 min"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"/>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_run"
+
+                />
+            <TextView
+                android:id="@+id/txtRunValue"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:text="10000 min"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"/>
+
+
+
+        </LinearLayout>
 
 
         <Button
             android:id="@+id/btnWeeklyLogs"
-            android:layout_width="175dp"
+            android:layout_width="130dp"
             android:layout_height="40dp"
             android:layout_gravity="center"
             android:background="@drawable/login_button"
             android:text="Weakly Logs"
             android:textColor="@color/white"
             android:textStyle="normal"
-            android:layout_marginBottom="10dp"/>
-
-
-        <Button
-            android:id="@+id/btnBloodSugar"
-            android:layout_width="130dp"
-            android:layout_height="40dp"
-            android:layout_gravity="center"
-            android:background="@drawable/login_button"
-            android:text="Blood Sugar"
-            android:textColor="@color/white"
-            android:textStyle="normal"
-            android:layout_marginBottom="10dp"
             />
 
-        <Button
-            android:id="@+id/btnBmi"
-            android:layout_width="130dp"
-            android:layout_height="40dp"
-            android:layout_gravity="center"
-            android:background="@drawable/login_button"
-            android:text="BMI"
-            android:textColor="@color/white"
-            android:textStyle="normal"
-            android:layout_marginBottom="10dp"
-            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:orientation="horizontal"
+            android:id="@+id/linear_Layout_3"
+
+
+
+
+            >
+
+
+            <Button
+                android:id="@+id/btnBloodSugar"
+                android:layout_width="130dp"
+                android:layout_height="40dp"
+
+                android:background="@drawable/login_button"
+                android:text="Blood Sugar"
+                android:textColor="@color/white"
+                android:textStyle="normal"
+
+
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+
+
+                />
+
+            <Button
+                android:id="@+id/btnBmi"
+                android:layout_width="130dp"
+                android:layout_height="40dp"
+
+                android:background="@drawable/login_button"
+                android:text="BMI"
+                android:textColor="@color/white"
+                android:textStyle="normal"
+
+
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+
+
+                />
+
+        </LinearLayout>
+
 
 
 
@@ -122,7 +209,7 @@
 
     <android.support.design.widget.NavigationView
         app:headerLayout="@layout/header"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/menuWhite"
         app:itemTextColor="@color/menuDarkGray"

@@ -21,8 +21,8 @@ public class Dashboard extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.dashboard);
 
-/*
-        drawerLayout = (DrawerLayout) findViewById(R.id.idDashboard);
+
+   /*     drawerLayout = (DrawerLayout) findViewById(R.id.idDashboard);
         actionBarDrawerToggle = new ActionBarDrawerToggle(this, drawerLayout, R.string.open, R.string.close);
         drawerLayout.addDrawerListener(actionBarDrawerToggle);
         actionBarDrawerToggle.syncState();
