@@ -46,6 +46,13 @@
 
 
                 >
+                <ImageView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_login_person"></ImageView>
+
 
                 <TextView
                     android:layout_width="match_parent"
