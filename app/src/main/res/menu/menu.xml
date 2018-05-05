@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/dashboard" android:title="Dashboard  " android:icon="@drawable/ic_dashboard"></item>
+    <item android:id="@+id/weekLog" android:title="WeeklyLogs  " android:icon="@drawable/ic_view_week"></item>
+    <item android:id="@+id/Exercise" android:title="Exercise  " android:icon="@drawable/ic_fitness_center"></item>
+    <item android:id="@+id/dietMed" android:title="Diet/Medecine Plan  " android:icon="@drawable/ic_dining"></item>
+    <item android:id="@+id/setting" android:title="Settings  " android:icon="@drawable/ic_settings"></item>
+    <item android:id="@+id/logout" android:title="logout  " android:icon="@drawable/ic_logout"></item>
+
+
+</menu>

@@ -1,6 +1,10 @@
 <resources>
     <string name="app_name">DiabetesFitness</string>
     <string name="title_activity_settings">Settings</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+
+
 
     <!-- Strings related to Settings -->
 

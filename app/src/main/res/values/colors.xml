@@ -6,4 +6,12 @@
     <color name="white">#ffff</color>
     <color name="custom">#00ffc0</color>
     <color name="ColorRadio">#03A9F4</color>
+
+    <color name="menuPrimary">#795548</color>
+    <color name="menuPrimaryDark">#5D4037</color>
+    <color name="menuWhite">#ffffff</color>
+    <color name="menuDarkGray">#6c6c6c</color>
+
+
+
 </resources>
