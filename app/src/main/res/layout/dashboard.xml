@@ -30,6 +30,16 @@
 
         </android.support.v7.widget.Toolbar>
 
+
+
+
+        <FrameLayout
+            android:id="@+id/fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></FrameLayout>
+
+
+
     </LinearLayout>
 
 
@@ -234,6 +244,7 @@
 
 
     <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="start"
