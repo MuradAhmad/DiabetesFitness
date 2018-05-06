@@ -11,6 +11,9 @@
     <color name="menuPrimaryDark">#5D4037</color>
     <color name="menuWhite">#ffffff</color>
     <color name="menuDarkGray">#6c6c6c</color>
+    <color name="mainYellow">#ffc107</color>
+    <color name="mainYellowDark">#ffa000</color>
+    <color name="mainRed">#ff4081</color>
 
 
 

@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.WindowManager;
+import android.widget.Button;
 import android.widget.TextView;
 
 /**
@@ -15,6 +16,7 @@ public class Login extends AppCompatActivity {
 
 
     TextView txtregester;
+    Button btndashboard;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +28,19 @@ public class Login extends AppCompatActivity {
 
 
         txtregester = (TextView) findViewById(R.id.txtregister);
+
+        btndashboard = (Button) findViewById(R.id.btnlogin);
+
+
+
+        btndashboard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(Login.this,Dashboard.class);
+                startActivity(intent);
+
+            }
+        });
 
 
 
@@ -42,7 +57,17 @@ public class Login extends AppCompatActivity {
          }
      });
  }
+/*
+    public void userDashboard (View v){
+        btndashboard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
 
+                Intent intent=new Intent(Login.this,Dashboard.class);
+                startActivity(intent);
+            }
+        });
+    }*/
 
 
 }
