@@ -1,7 +1,9 @@
 package com.example.muradahmad.diabetesfitness;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
 
@@ -22,7 +24,17 @@ public class Register extends AppCompatActivity {
         getWindow().setBackgroundDrawableResource(R.drawable.ic_bg);
 
 
-       // settings = (Button) findViewById(R.id)
+        settings = (Button) findViewById(R.id.btnregister);
+
+
+        settings.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(Register.this,Settings.class);
+                startActivity(intent);
+
+            }
+        });
 
 
     }

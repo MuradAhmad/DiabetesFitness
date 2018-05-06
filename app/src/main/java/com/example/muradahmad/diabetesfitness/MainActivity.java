@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-    Button login,register, settings, btnDashboard;
+    Button login,register;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,8 +27,7 @@ public class MainActivity extends AppCompatActivity {
 
         login = (Button) findViewById(R.id.btnlogin);
         register = (Button) findViewById(R.id.btnregister);
-        settings = (Button) findViewById(R.id.btnsettings);
-        btnDashboard = (Button) findViewById(R.id.btndashboard);
+
 
 
         login.setOnClickListener(new View.OnClickListener() {
@@ -52,24 +51,6 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-        settings.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent=new Intent(MainActivity.this,Settings.class);
-                startActivity(intent);
-
-            }
-        });
-
-
-        btnDashboard.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent=new Intent(MainActivity.this,Dashboard.class);
-                startActivity(intent);
-
-            }
-        });
 
 
 /*        login.setOnClickListener(new View.OnClickListener() {
