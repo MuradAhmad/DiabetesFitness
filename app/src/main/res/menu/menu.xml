@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
 
     <item android:id="@+id/dashboard" android:title="Dashboard  " android:icon="@drawable/ic_dashboard"></item>
     <item android:id="@+id/weekLog" android:title="WeeklyLogs  " android:icon="@drawable/ic_view_week"></item>

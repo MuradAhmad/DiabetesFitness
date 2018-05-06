@@ -1,9 +1,11 @@
 package com.example.muradahmad.diabetesfitness;
 
 import android.os.Bundle;
+import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 
 /**
@@ -21,16 +23,27 @@ public class Dashboard extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.dashboard);
 
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
 
-   /*     drawerLayout = (DrawerLayout) findViewById(R.id.idDashboard);
-        actionBarDrawerToggle = new ActionBarDrawerToggle(this, drawerLayout, R.string.open, R.string.close);
+        drawerLayout = findViewById(R.id.idDashboard);
+        actionBarDrawerToggle = new ActionBarDrawerToggle(this, drawerLayout, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawerLayout.addDrawerListener(actionBarDrawerToggle);
         actionBarDrawerToggle.syncState();
-        getActionBar().setDisplayHomeAsUpEnabled(true);*/
+        //getActionBar().setDisplayHomeAsUpEnabled(true);
 
 
     }
- /*   @Override
+
+    public void onBackPressed() {
+        if (drawerLayout.isDrawerOpen(GravityCompat.START)) {
+            drawerLayout.closeDrawer(GravityCompat.START);
+        } else {
+            super.onBackPressed();
+        }
+    }
+
+/*   @Override
     public boolean onOptionsItemSelected(MenuItem item) {
 
         if(actionBarDrawerToggle.onOptionsItemSelected(item)){
@@ -38,5 +51,6 @@ public class Dashboard extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
-    }*/
+    }
+*/
 }
