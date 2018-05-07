@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent" android:layout_height="match_parent"
-    android:background="@color/mainYellow"
+    android:background="@color/white"
     android:id="@+id/profile"
     >
 
@@ -9,9 +9,9 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        android:background="@color/mainYellow"
+        android:background="@color/transparent"
         android:orientation="vertical"
-        >
+        android:id="@+id/linearLayout">
 
         <ImageView
             android:layout_width="75dp"
@@ -28,6 +28,7 @@
             android:textSize="25sp"
             android:layout_marginTop="2dp"/>
         <TextView
+            android:id="@+id/txtUserEmail"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:text="hassan.cute@student.charsi.com"
@@ -37,5 +38,167 @@
             android:layout_marginTop="2dp"/>
 
     </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/linearLayout"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="18dp"
+        android:text="Gender"
+        android:id="@+id/txtViewGender"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/txtGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignBaseline="@+id/txtViewGender"
+        android:layout_alignBottom="@+id/txtViewGender"
+
+        android:layout_marginLeft="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_toEndOf="@+id/txtViewGender"
+        android:layout_toRightOf="@+id/txtViewGender"
+        android:text="Male" />
+
+    <TextView
+        android:id="@+id/txtViewBirth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/txtViewGender"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="17dp"
+        android:text="Birth Year"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/txtBirth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtGender"
+        android:layout_alignStart="@+id/txtGender"
+        android:layout_alignTop="@+id/txtViewBirth"
+        android:text="1850" />
+
+    <TextView
+        android:id="@+id/txtViewHeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/txtViewBirth"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="13dp"
+        android:text="Height"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/txtHeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/txtViewHeight"
+        android:layout_toEndOf="@+id/txtViewGender"
+        android:layout_toRightOf="@+id/txtViewGender"
+        android:layout_marginLeft="50dp"
+        android:layout_marginStart="50dp"
+        android:text="4.5'" />
+
+    <TextView
+        android:id="@+id/txtViewWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_centerVertical="true"
+        android:text="Weight"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/txtWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignBaseline="@+id/txtViewWeight"
+        android:layout_alignBottom="@+id/txtViewWeight"
+        android:layout_alignLeft="@+id/txtGender"
+        android:layout_alignStart="@+id/txtGender"
+        android:text="200 Kg" />
+
+    <TextView
+        android:id="@+id/txtViewBMI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtViewWeight"
+        android:layout_alignStart="@+id/txtViewWeight"
+        android:layout_below="@+id/txtViewWeight"
+        android:layout_marginTop="13dp"
+        android:text="BMI"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/txtBMI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtViewBMI"
+        android:layout_alignBottom="@+id/txtViewBMI"
+        android:layout_alignLeft="@+id/txtGender"
+        android:layout_alignStart="@+id/txtGender"
+        android:text="not available" />
+
+    <TextView
+        android:id="@+id/txtViewIdealWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtViewBMI"
+        android:layout_alignStart="@+id/txtViewBMI"
+        android:layout_below="@+id/txtViewBMI"
+        android:layout_marginTop="13dp"
+        android:text="Ideal Weight"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/txtIdealWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtViewIdealWeight"
+        android:layout_alignBottom="@+id/txtViewIdealWeight"
+        android:layout_alignLeft="@+id/txtGender"
+        android:layout_alignStart="@+id/txtGender"
+        android:text="35 kg" />
+
+    <TextView
+        android:id="@+id/txtViewExercise"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtViewIdealWeight"
+        android:layout_alignStart="@+id/txtViewIdealWeight"
+        android:layout_below="@+id/txtViewIdealWeight"
+        android:layout_marginTop="13dp"
+        android:text="Recomemded Exercise"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/txtExercise"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/txtViewExercise"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_toEndOf="@+id/txtIdealWeight"
+        android:layout_toRightOf="@+id/txtIdealWeight"
+        android:text="Back Flip" />
+
 
 </RelativeLayout>

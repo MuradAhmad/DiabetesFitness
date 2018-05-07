@@ -51,9 +51,9 @@ public class Dashboard extends AppCompatActivity implements NavigationView.OnNav
 
         switch (item.getItemId()){
             case R.id.menu_profile:
-                Toast.makeText(this,"this is User Profile", Toast.LENGTH_LONG).show();
+               // Toast.makeText(this,"this is User Profile", Toast.LENGTH_LONG).show();
 
-             //  getSupportFragmentManager().beginTransaction().replace(R.id.idDashboard, new Profile()).commit();
+              getSupportFragmentManager().beginTransaction().replace(R.id.idDashboard, new Profile()).commit();
 
                 break;
 
