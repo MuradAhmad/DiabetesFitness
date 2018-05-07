@@ -250,8 +250,8 @@
         android:layout_gravity="start"
         android:background="@color/menuWhite"
         app:headerLayout="@layout/header"
-        app:itemIconTint="@color/menuDarkGray"
-        app:itemTextColor="@color/menuDarkGray"
+        app:itemIconTint="@color/colorPrimaryDark"
+        app:itemTextColor="@color/colorPrimaryDark"
         app:menu="@menu/menu"
 
 
