@@ -1,16 +1,22 @@
 package com.example.muradahmad.diabetesfitness;
 
 import android.content.Intent;
-import android.support.v4.widget.DrawerLayout;
-import android.support.v7.app.ActionBarDrawerToggle;
-import android.support.v7.app.AppCompatActivity;
+
+import androidx.appcompat.app.ActionBarDrawerToggle;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.MenuItem;
+import android.util.FloatMath;
 import android.view.View;
 import android.widget.Button;
 
+
 public class MainActivity extends AppCompatActivity {
 
+
+
+    float number1 = 1.0f;
+
+    float number2 = 2.0f;
 
 
 
@@ -24,8 +30,9 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+       // float number3 = FloatMath.sqrt(number1 + number2);
 
-        login = (Button) findViewById(R.id.btnlogin);
+                login = (Button) findViewById(R.id.btnlogin);
         register = (Button) findViewById(R.id.btnregister);
 
 
